@@ -1,0 +1,437 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="39421e43-7ae7-4cc3-913a-14995be6bac1" name="pook@POOK-PC 2012-04-08 01:21:08" runUser="pook-PC\pook" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Local" id="b5edaf27-13a8-4bb9-ae5f-dbba96af453a">
+    <Description>These are default test settings for a local test run.</Description>
+    <Deployment enabled="false" runDeploymentRoot="pook_POOK-PC 2012-04-08 01_21_08">
+      <DeploymentItem filename="C:\Users\pook\Desktop\new\EventManagerModel\EventManagerPro.DBLayer\bin\Debug\EventManagerPro.DBLayer.exe" />
+      <DeploymentItem filename="C:\Users\pook\Desktop\new\EventManagerModel\packages\EntityFramework.4.3.1\lib\net40\EntityFramework.dll" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2012-04-08T01:21:08.0591624+08:00" queuing="2012-04-08T01:21:08.0861639+08:00" start="2012-04-08T01:21:08.1131655+08:00" finish="2012-04-08T01:21:19.9648434+08:00" />
+  <ResultSummary outcome="Failed">
+    <Counters total="36" executed="36" passed="28" error="0" failed="5" timeout="0" aborted="0" inconclusive="3" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="registerGuestTest" storage="c:\users\pook\desktop\new\eventmanagermodel\test\bin\debug\test.dll" id="24fab019-4631-367d-1d12-c84549cb128d">
+      <Execution id="42d3f66b-46e9-43eb-bb75-2c371bfd15d6" />
+      <TestMethod codeBase="C:/Users/pook/Desktop/new/EventManagerModel/Test/bin/Debug/Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Test.EventModelTest, Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="registerGuestTest" />
+    </UnitTest>
+    <UnitTest name="unregisterGuestTest" storage="c:\users\pook\desktop\new\eventmanagermodel\test\bin\debug\test.dll" id="274a0fb8-adb8-a0c4-cf75-2cf43dc8e1df">
+      <Execution id="763de080-a1e7-4e02-8e49-5ded1b753ac1" />
+      <TestMethod codeBase="C:/Users/pook/Desktop/new/EventManagerModel/Test/bin/Debug/Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Test.EventModelTest, Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="unregisterGuestTest" />
+    </UnitTest>
+    <UnitTest name="authenticateTest2" storage="c:\users\pook\desktop\new\eventmanagermodel\test\bin\debug\test.dll" id="38fe6971-51ac-951d-6a49-d09232c12d3b">
+      <Execution id="3aeb7ddc-dc4a-4682-ad04-8014ee881944" />
+      <TestMethod codeBase="C:/Users/pook/Desktop/new/EventManagerModel/Test/bin/Debug/Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Test.StudentModelTest, Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="authenticateTest2" />
+    </UnitTest>
+    <UnitTest name="createObjTest" storage="c:\users\pook\desktop\new\eventmanagermodel\test\bin\debug\test.dll" id="d337ace4-c6fc-979c-4500-e57df9e5e21c">
+      <Execution id="d880f1da-01ef-41a9-8817-5ef898312339" />
+      <TestMethod codeBase="C:/Users/pook/Desktop/new/EventManagerModel/Test/bin/Debug/Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Test.EventModelTest, Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="createObjTest" />
+    </UnitTest>
+    <UnitTest name="getNotByOwnerTest" storage="c:\users\pook\desktop\new\eventmanagermodel\test\bin\debug\test.dll" id="78230781-8f5b-c333-10ba-7350e341a428">
+      <Execution id="910fe10f-dbab-4f4b-8238-c17e8cb55254" />
+      <TestMethod codeBase="C:/Users/pook/Desktop/new/EventManagerModel/Test/bin/Debug/Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Test.EventModelTest, Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="getNotByOwnerTest" />
+    </UnitTest>
+    <UnitTest name="authenticateTest3" storage="c:\users\pook\desktop\new\eventmanagermodel\test\bin\debug\test.dll" id="7196bebb-03fc-f3ae-c4be-304633156165">
+      <Execution id="85c478db-51ba-4d56-b7bf-0f614141ef5a" />
+      <TestMethod codeBase="C:/Users/pook/Desktop/new/EventManagerModel/Test/bin/Debug/Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Test.StudentModelTest, Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="authenticateTest3" />
+    </UnitTest>
+    <UnitTest name="getByMatricIdTest2" storage="c:\users\pook\desktop\new\eventmanagermodel\test\bin\debug\test.dll" id="ed685d3f-57d1-bb21-d658-61207580e0f9">
+      <Execution id="2e88f149-c941-4317-9922-47050cff00b4" />
+      <TestMethod codeBase="C:/Users/pook/Desktop/new/EventManagerModel/Test/bin/Debug/Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Test.StudentModelTest, Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="getByMatricIdTest2" />
+    </UnitTest>
+    <UnitTest name="getByBudgetIdTest" storage="c:\users\pook\desktop\new\eventmanagermodel\test\bin\debug\test.dll" id="4a380e22-bfc9-61b5-69bf-56a2e93870e7">
+      <Execution id="2f46ccb7-3b46-46d5-900b-75a5187a6584" />
+      <TestMethod codeBase="C:/Users/pook/Desktop/new/EventManagerModel/Test/bin/Debug/Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Test.BudgetItemModelTest, Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="getByBudgetIdTest" />
+    </UnitTest>
+    <UnitTest name="createTest" storage="c:\users\pook\desktop\new\eventmanagermodel\test\bin\debug\test.dll" id="b9fd5027-d458-f3dc-2b95-b5c0257857b9">
+      <Execution id="39152fcb-5956-460e-8377-c626969c68e7" />
+      <TestMethod codeBase="C:/Users/pook/Desktop/new/EventManagerModel/Test/bin/Debug/Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Test.SubEventModelTest, Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="createTest" />
+    </UnitTest>
+    <UnitTest name="createUpdateDeleteObjTest" storage="c:\users\pook\desktop\new\eventmanagermodel\test\bin\debug\test.dll" id="66426c1a-8b37-840c-5d54-0a9cdbb1101f">
+      <Execution id="1c57ec66-fe2d-4f62-ac79-de2b83a8f0cf" />
+      <TestMethod codeBase="C:/Users/pook/Desktop/new/EventManagerModel/Test/bin/Debug/Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Test.BudgetItemModelTest, Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="createUpdateDeleteObjTest" />
+    </UnitTest>
+    <UnitTest name="registerGuestInvalidMatricTest" storage="c:\users\pook\desktop\new\eventmanagermodel\test\bin\debug\test.dll" id="cde137cf-09b2-8471-3200-afd4bd50db7e">
+      <Execution id="bc2a1448-c5c5-48bc-b4a8-e9592f76773b" />
+      <TestMethod codeBase="C:/Users/pook/Desktop/new/EventManagerModel/Test/bin/Debug/Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Test.EventModelTest, Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="registerGuestInvalidMatricTest" />
+    </UnitTest>
+    <UnitTest name="getByOwnerTest" storage="c:\users\pook\desktop\new\eventmanagermodel\test\bin\debug\test.dll" id="e8083e2e-88c5-baf6-aad5-49f434afa078">
+      <Execution id="38cb7095-b85e-4970-8f78-00aca3cf3a54" />
+      <TestMethod codeBase="C:/Users/pook/Desktop/new/EventManagerModel/Test/bin/Debug/Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Test.EventModelTest, Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="getByOwnerTest" />
+    </UnitTest>
+    <UnitTest name="getByMatricIdTest" storage="c:\users\pook\desktop\new\eventmanagermodel\test\bin\debug\test.dll" id="59beadb5-7732-6ff1-c491-0bfa1b1b4b70">
+      <Execution id="7d06223d-949d-4331-9b32-e71e07da4d74" />
+      <TestMethod codeBase="C:/Users/pook/Desktop/new/EventManagerModel/Test/bin/Debug/Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Test.StudentModelTest, Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="getByMatricIdTest" />
+    </UnitTest>
+    <UnitTest name="getAllTest" storage="c:\users\pook\desktop\new\eventmanagermodel\test\bin\debug\test.dll" id="4463b9d7-a5da-32b2-ddb6-c26959bc2437">
+      <Execution id="9926ac23-78cc-4b43-a356-14891ebe7487" />
+      <TestMethod codeBase="C:/Users/pook/Desktop/new/EventManagerModel/Test/bin/Debug/Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Test.EventModelTest, Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="getAllTest" />
+    </UnitTest>
+    <UnitTest name="StudentModelConstructorTest" storage="c:\users\pook\desktop\new\eventmanagermodel\test\bin\debug\test.dll" id="6d10f77b-d7c3-bfde-6ecc-2a56e62b019e">
+      <Execution id="d92f925e-5261-46c4-861d-6318031931c1" />
+      <TestMethod codeBase="C:/Users/pook/Desktop/new/EventManagerModel/Test/bin/Debug/Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Test.StudentModelTest, Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="StudentModelConstructorTest" />
+    </UnitTest>
+    <UnitTest name="createTest" storage="c:\users\pook\desktop\new\eventmanagermodel\test\bin\debug\test.dll" id="544b302b-9519-c3d8-160f-d5ffbc660e98">
+      <Execution id="eae959d2-fbae-4245-bc23-f8f6a149c6bb" />
+      <TestMethod codeBase="C:/Users/pook/Desktop/new/EventManagerModel/Test/bin/Debug/Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Test.StudentModelTest, Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="createTest" />
+    </UnitTest>
+    <UnitTest name="getAllForLoginPageTest" storage="c:\users\pook\desktop\new\eventmanagermodel\test\bin\debug\test.dll" id="ffd96500-27b2-0a8e-f8ee-b1dc6076ec8d">
+      <Execution id="0ebe4902-ef98-4cfc-821f-598a06685eda" />
+      <TestMethod codeBase="C:/Users/pook/Desktop/new/EventManagerModel/Test/bin/Debug/Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Test.EventModelTest, Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="getAllForLoginPageTest" />
+    </UnitTest>
+    <UnitTest name="getByIDTest" storage="c:\users\pook\desktop\new\eventmanagermodel\test\bin\debug\test.dll" id="3a37c32e-9877-2317-531c-8aecd4caa241">
+      <Execution id="2071730e-9bed-49c8-a71c-1c56b6a28bf7" />
+      <TestMethod codeBase="C:/Users/pook/Desktop/new/EventManagerModel/Test/bin/Debug/Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Test.SubEventModelTest, Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="getByIDTest" />
+    </UnitTest>
+    <UnitTest name="getByIDTest" storage="c:\users\pook\desktop\new\eventmanagermodel\test\bin\debug\test.dll" id="e51e8bb9-ddf4-3099-586a-f78cbd5f9bde">
+      <Execution id="c473c8a5-c619-4eb1-8422-28cf327ec453" />
+      <TestMethod codeBase="C:/Users/pook/Desktop/new/EventManagerModel/Test/bin/Debug/Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Test.BudgetModelTest, Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="getByIDTest" />
+    </UnitTest>
+    <UnitTest name="getByIDTest" storage="c:\users\pook\desktop\new\eventmanagermodel\test\bin\debug\test.dll" id="caeca598-ddb3-04dd-169b-b76b9a1897dc">
+      <Execution id="89f586f2-187c-4bf8-a1bc-1154a47ba87f" />
+      <TestMethod codeBase="C:/Users/pook/Desktop/new/EventManagerModel/Test/bin/Debug/Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Test.VenueModelTest, Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="getByIDTest" />
+    </UnitTest>
+    <UnitTest name="getAllTest" storage="c:\users\pook\desktop\new\eventmanagermodel\test\bin\debug\test.dll" id="40020085-a519-e57c-0c2a-2c14abcdde6d">
+      <Execution id="2509a320-8fcd-47e6-9f71-e9a0d9fc9e88" />
+      <TestMethod codeBase="C:/Users/pook/Desktop/new/EventManagerModel/Test/bin/Debug/Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Test.StudentModelTest, Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="getAllTest" />
+    </UnitTest>
+    <UnitTest name="createUpdateObjTest" storage="c:\users\pook\desktop\new\eventmanagermodel\test\bin\debug\test.dll" id="1a7c4f6a-4912-3584-377b-6222e5252bf8">
+      <Execution id="17ad60d5-e853-4ba1-a3c1-4c58a302f1b7" />
+      <TestMethod codeBase="C:/Users/pook/Desktop/new/EventManagerModel/Test/bin/Debug/Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Test.VenueModelTest, Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="createUpdateObjTest" />
+    </UnitTest>
+    <UnitTest name="registerGuestInvalidEventTest" storage="c:\users\pook\desktop\new\eventmanagermodel\test\bin\debug\test.dll" id="ece4eb43-de55-2efe-e488-6da09a25b324">
+      <Execution id="3500db78-4da5-4cf6-8677-6829857fe7e6" />
+      <TestMethod codeBase="C:/Users/pook/Desktop/new/EventManagerModel/Test/bin/Debug/Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Test.EventModelTest, Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="registerGuestInvalidEventTest" />
+    </UnitTest>
+    <UnitTest name="getAllByYearMonthTest" storage="c:\users\pook\desktop\new\eventmanagermodel\test\bin\debug\test.dll" id="c346c7bf-f8fc-5c8c-b831-5b9a2921bc58">
+      <Execution id="c1f02400-8e5a-45d1-a12b-6d6d5717f628" />
+      <TestMethod codeBase="C:/Users/pook/Desktop/new/EventManagerModel/Test/bin/Debug/Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Test.EventModelTest, Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="getAllByYearMonthTest" />
+    </UnitTest>
+    <UnitTest name="getAllTest" storage="c:\users\pook\desktop\new\eventmanagermodel\test\bin\debug\test.dll" id="9b99d127-6b63-0a5f-5670-f20195d5b70d">
+      <Execution id="631f4031-3dfb-48d9-a06a-9037ffd6be43" />
+      <TestMethod codeBase="C:/Users/pook/Desktop/new/EventManagerModel/Test/bin/Debug/Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Test.BudgetModelTest, Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="getAllTest" />
+    </UnitTest>
+    <UnitTest name="createTest" storage="c:\users\pook\desktop\new\eventmanagermodel\test\bin\debug\test.dll" id="2a5411a1-a0c9-e789-49b0-015ac033b9c5">
+      <Execution id="aae809c3-bfea-4fb8-956a-54a64b100611" />
+      <TestMethod codeBase="C:/Users/pook/Desktop/new/EventManagerModel/Test/bin/Debug/Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Test.BudgetItemModelTest, Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="createTest" />
+    </UnitTest>
+    <UnitTest name="SubEventModelConstructorTest" storage="c:\users\pook\desktop\new\eventmanagermodel\test\bin\debug\test.dll" id="e4ad7175-931e-7af8-1c8f-e88329e6e874">
+      <Execution id="febad70c-ce9c-437e-b064-9e1c262d187c" />
+      <TestMethod codeBase="C:/Users/pook/Desktop/new/EventManagerModel/Test/bin/Debug/Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Test.SubEventModelTest, Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="SubEventModelConstructorTest" />
+    </UnitTest>
+    <UnitTest name="authenticateTest" storage="c:\users\pook\desktop\new\eventmanagermodel\test\bin\debug\test.dll" id="2993fa6f-6504-0e49-2750-a26f51b86457">
+      <Execution id="ffad8c2e-3022-45d0-b205-da74d00390d2" />
+      <TestMethod codeBase="C:/Users/pook/Desktop/new/EventManagerModel/Test/bin/Debug/Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Test.StudentModelTest, Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="authenticateTest" />
+    </UnitTest>
+    <UnitTest name="getByIDTest2" storage="c:\users\pook\desktop\new\eventmanagermodel\test\bin\debug\test.dll" id="a64cba6d-c31e-5cb9-df08-a366e9e6b379">
+      <Execution id="030020df-c4b5-404b-b8c4-cf046426c3d0" />
+      <TestMethod codeBase="C:/Users/pook/Desktop/new/EventManagerModel/Test/bin/Debug/Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Test.VenueModelTest, Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="getByIDTest2" />
+    </UnitTest>
+    <UnitTest name="getByIDTest" storage="c:\users\pook\desktop\new\eventmanagermodel\test\bin\debug\test.dll" id="9f901cae-af44-10c5-5311-a7d82ee49a4b">
+      <Execution id="3b0bf750-840e-4282-82f4-abeace4f43bc" />
+      <TestMethod codeBase="C:/Users/pook/Desktop/new/EventManagerModel/Test/bin/Debug/Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Test.EventModelTest, Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="getByIDTest" />
+    </UnitTest>
+    <UnitTest name="updateTest" storage="c:\users\pook\desktop\new\eventmanagermodel\test\bin\debug\test.dll" id="88fa9be9-85c2-33d2-20a5-8e410d0fedd2">
+      <Execution id="4748af75-b91e-488a-9339-4b8a7f944415" />
+      <TestMethod codeBase="C:/Users/pook/Desktop/new/EventManagerModel/Test/bin/Debug/Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Test.BudgetModelTest, Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="updateTest" />
+    </UnitTest>
+    <UnitTest name="getByIDTest" storage="c:\users\pook\desktop\new\eventmanagermodel\test\bin\debug\test.dll" id="71b4660b-79b5-f37e-6678-ae8a9bf08dae">
+      <Execution id="7bfbd292-aa47-4d36-b220-1d8d24d82ca5" />
+      <TestMethod codeBase="C:/Users/pook/Desktop/new/EventManagerModel/Test/bin/Debug/Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Test.BudgetItemModelTest, Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="getByIDTest" />
+    </UnitTest>
+    <UnitTest name="getAllTest" storage="c:\users\pook\desktop\new\eventmanagermodel\test\bin\debug\test.dll" id="a083f8d7-649b-ba15-b362-bf8c2f2930a3">
+      <Execution id="56f2e444-32b2-4c92-a861-35c4bfbd7bf6" />
+      <TestMethod codeBase="C:/Users/pook/Desktop/new/EventManagerModel/Test/bin/Debug/Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Test.BudgetItemModelTest, Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="getAllTest" />
+    </UnitTest>
+    <UnitTest name="updateObjTest" storage="c:\users\pook\desktop\new\eventmanagermodel\test\bin\debug\test.dll" id="d8f77fb4-4ca7-6fd2-2a8f-b5a816e06274">
+      <Execution id="cce6c241-f526-4bd5-a3c4-2e6ac26c838a" />
+      <TestMethod codeBase="C:/Users/pook/Desktop/new/EventManagerModel/Test/bin/Debug/Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Test.BudgetModelTest, Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="updateObjTest" />
+    </UnitTest>
+    <UnitTest name="getAllByMonthTest" storage="c:\users\pook\desktop\new\eventmanagermodel\test\bin\debug\test.dll" id="db4d76b7-c07a-d9a1-32a8-9f7b4b504d29">
+      <Execution id="9085aa48-ac96-4afa-9eed-b6c283ceec56" />
+      <TestMethod codeBase="C:/Users/pook/Desktop/new/EventManagerModel/Test/bin/Debug/Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Test.EventModelTest, Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="getAllByMonthTest" />
+    </UnitTest>
+    <UnitTest name="VenueModelConstructorTest" storage="c:\users\pook\desktop\new\eventmanagermodel\test\bin\debug\test.dll" id="23d688fd-c1f5-e41f-14e6-471e216dfb5e">
+      <Execution id="ccd58229-2517-4ceb-a100-630256460466" />
+      <TestMethod codeBase="C:/Users/pook/Desktop/new/EventManagerModel/Test/bin/Debug/Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Test.VenueModelTest, Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="VenueModelConstructorTest" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="1a7c4f6a-4912-3584-377b-6222e5252bf8" executionId="17ad60d5-e853-4ba1-a3c1-4c58a302f1b7" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="23d688fd-c1f5-e41f-14e6-471e216dfb5e" executionId="ccd58229-2517-4ceb-a100-630256460466" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="24fab019-4631-367d-1d12-c84549cb128d" executionId="42d3f66b-46e9-43eb-bb75-2c371bfd15d6" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="274a0fb8-adb8-a0c4-cf75-2cf43dc8e1df" executionId="763de080-a1e7-4e02-8e49-5ded1b753ac1" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="2993fa6f-6504-0e49-2750-a26f51b86457" executionId="ffad8c2e-3022-45d0-b205-da74d00390d2" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="2a5411a1-a0c9-e789-49b0-015ac033b9c5" executionId="aae809c3-bfea-4fb8-956a-54a64b100611" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="38fe6971-51ac-951d-6a49-d09232c12d3b" executionId="3aeb7ddc-dc4a-4682-ad04-8014ee881944" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="3a37c32e-9877-2317-531c-8aecd4caa241" executionId="2071730e-9bed-49c8-a71c-1c56b6a28bf7" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="40020085-a519-e57c-0c2a-2c14abcdde6d" executionId="2509a320-8fcd-47e6-9f71-e9a0d9fc9e88" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="4463b9d7-a5da-32b2-ddb6-c26959bc2437" executionId="9926ac23-78cc-4b43-a356-14891ebe7487" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="4a380e22-bfc9-61b5-69bf-56a2e93870e7" executionId="2f46ccb7-3b46-46d5-900b-75a5187a6584" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="544b302b-9519-c3d8-160f-d5ffbc660e98" executionId="eae959d2-fbae-4245-bc23-f8f6a149c6bb" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="59beadb5-7732-6ff1-c491-0bfa1b1b4b70" executionId="7d06223d-949d-4331-9b32-e71e07da4d74" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="66426c1a-8b37-840c-5d54-0a9cdbb1101f" executionId="1c57ec66-fe2d-4f62-ac79-de2b83a8f0cf" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="6d10f77b-d7c3-bfde-6ecc-2a56e62b019e" executionId="d92f925e-5261-46c4-861d-6318031931c1" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="7196bebb-03fc-f3ae-c4be-304633156165" executionId="85c478db-51ba-4d56-b7bf-0f614141ef5a" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="71b4660b-79b5-f37e-6678-ae8a9bf08dae" executionId="7bfbd292-aa47-4d36-b220-1d8d24d82ca5" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="78230781-8f5b-c333-10ba-7350e341a428" executionId="910fe10f-dbab-4f4b-8238-c17e8cb55254" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="88fa9be9-85c2-33d2-20a5-8e410d0fedd2" executionId="4748af75-b91e-488a-9339-4b8a7f944415" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="9b99d127-6b63-0a5f-5670-f20195d5b70d" executionId="631f4031-3dfb-48d9-a06a-9037ffd6be43" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="9f901cae-af44-10c5-5311-a7d82ee49a4b" executionId="3b0bf750-840e-4282-82f4-abeace4f43bc" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="a083f8d7-649b-ba15-b362-bf8c2f2930a3" executionId="56f2e444-32b2-4c92-a861-35c4bfbd7bf6" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="a64cba6d-c31e-5cb9-df08-a366e9e6b379" executionId="030020df-c4b5-404b-b8c4-cf046426c3d0" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="b9fd5027-d458-f3dc-2b95-b5c0257857b9" executionId="39152fcb-5956-460e-8377-c626969c68e7" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="c346c7bf-f8fc-5c8c-b831-5b9a2921bc58" executionId="c1f02400-8e5a-45d1-a12b-6d6d5717f628" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="caeca598-ddb3-04dd-169b-b76b9a1897dc" executionId="89f586f2-187c-4bf8-a1bc-1154a47ba87f" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="cde137cf-09b2-8471-3200-afd4bd50db7e" executionId="bc2a1448-c5c5-48bc-b4a8-e9592f76773b" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="d337ace4-c6fc-979c-4500-e57df9e5e21c" executionId="d880f1da-01ef-41a9-8817-5ef898312339" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="d8f77fb4-4ca7-6fd2-2a8f-b5a816e06274" executionId="cce6c241-f526-4bd5-a3c4-2e6ac26c838a" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="db4d76b7-c07a-d9a1-32a8-9f7b4b504d29" executionId="9085aa48-ac96-4afa-9eed-b6c283ceec56" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="e4ad7175-931e-7af8-1c8f-e88329e6e874" executionId="febad70c-ce9c-437e-b064-9e1c262d187c" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="e51e8bb9-ddf4-3099-586a-f78cbd5f9bde" executionId="c473c8a5-c619-4eb1-8422-28cf327ec453" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="e8083e2e-88c5-baf6-aad5-49f434afa078" executionId="38cb7095-b85e-4970-8f78-00aca3cf3a54" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="ece4eb43-de55-2efe-e488-6da09a25b324" executionId="3500db78-4da5-4cf6-8677-6829857fe7e6" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="ed685d3f-57d1-bb21-d658-61207580e0f9" executionId="2e88f149-c941-4317-9922-47050cff00b4" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="ffd96500-27b2-0a8e-f8ee-b1dc6076ec8d" executionId="0ebe4902-ef98-4cfc-821f-598a06685eda" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="17ad60d5-e853-4ba1-a3c1-4c58a302f1b7" testId="1a7c4f6a-4912-3584-377b-6222e5252bf8" testName="createUpdateObjTest" computerName="POOK-PC" duration="00:00:00.7730653" startTime="2012-04-08T01:21:08.1311665+08:00" endTime="2012-04-08T01:21:09.1602254+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="17ad60d5-e853-4ba1-a3c1-4c58a302f1b7">
+    </UnitTestResult>
+    <UnitTestResult executionId="ccd58229-2517-4ceb-a100-630256460466" testId="23d688fd-c1f5-e41f-14e6-471e216dfb5e" testName="VenueModelConstructorTest" computerName="POOK-PC" duration="00:00:00.0178529" startTime="2012-04-08T01:21:09.1632255+08:00" endTime="2012-04-08T01:21:09.1982275+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Inconclusive" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="ccd58229-2517-4ceb-a100-630256460466">
+      <Output>
+        <ErrorInfo>
+          <Message>Assert.Inconclusive failed. TODO: Implement code to verify target</Message>
+          <StackTrace>   at Test.VenueModelTest.VenueModelConstructorTest() in C:\Users\pook\Desktop\new\EventManagerModel\Test\VenueModelTest.cs:line 76
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="42d3f66b-46e9-43eb-bb75-2c371bfd15d6" testId="24fab019-4631-367d-1d12-c84549cb128d" testName="registerGuestTest" computerName="POOK-PC" duration="00:00:00.5510922" startTime="2012-04-08T01:21:09.2132284+08:00" endTime="2012-04-08T01:21:09.7792608+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="42d3f66b-46e9-43eb-bb75-2c371bfd15d6">
+    </UnitTestResult>
+    <UnitTestResult executionId="763de080-a1e7-4e02-8e49-5ded1b753ac1" testId="274a0fb8-adb8-a0c4-cf75-2cf43dc8e1df" testName="unregisterGuestTest" computerName="POOK-PC" duration="00:00:00.3167678" startTime="2012-04-08T01:21:09.7812609+08:00" endTime="2012-04-08T01:21:10.1052794+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="763de080-a1e7-4e02-8e49-5ded1b753ac1">
+    </UnitTestResult>
+    <UnitTestResult executionId="ffad8c2e-3022-45d0-b205-da74d00390d2" testId="2993fa6f-6504-0e49-2750-a26f51b86457" testName="authenticateTest" computerName="POOK-PC" duration="00:00:00.5585763" startTime="2012-04-08T01:21:10.1092797+08:00" endTime="2012-04-08T01:21:10.6783122+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="ffad8c2e-3022-45d0-b205-da74d00390d2">
+    </UnitTestResult>
+    <UnitTestResult executionId="aae809c3-bfea-4fb8-956a-54a64b100611" testId="2a5411a1-a0c9-e789-49b0-015ac033b9c5" testName="createTest" computerName="POOK-PC" duration="00:00:00.4280170" startTime="2012-04-08T01:21:10.6813124+08:00" endTime="2012-04-08T01:21:11.1173373+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="aae809c3-bfea-4fb8-956a-54a64b100611">
+    </UnitTestResult>
+    <UnitTestResult executionId="3aeb7ddc-dc4a-4682-ad04-8014ee881944" testId="38fe6971-51ac-951d-6a49-d09232c12d3b" testName="authenticateTest2" computerName="POOK-PC" duration="00:00:00.2776566" startTime="2012-04-08T01:21:11.1203375+08:00" endTime="2012-04-08T01:21:11.4063538+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="3aeb7ddc-dc4a-4682-ad04-8014ee881944">
+    </UnitTestResult>
+    <UnitTestResult executionId="2071730e-9bed-49c8-a71c-1c56b6a28bf7" testId="3a37c32e-9877-2317-531c-8aecd4caa241" testName="getByIDTest" computerName="POOK-PC" duration="00:00:00.0886518" startTime="2012-04-08T01:21:11.4093540+08:00" endTime="2012-04-08T01:21:11.5043595+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="2071730e-9bed-49c8-a71c-1c56b6a28bf7">
+    </UnitTestResult>
+    <UnitTestResult executionId="2509a320-8fcd-47e6-9f71-e9a0d9fc9e88" testId="40020085-a519-e57c-0c2a-2c14abcdde6d" testName="getAllTest" computerName="POOK-PC" duration="00:00:01.2307465" startTime="2012-04-08T01:21:11.5093597+08:00" endTime="2012-04-08T01:21:12.7454304+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="2509a320-8fcd-47e6-9f71-e9a0d9fc9e88">
+    </UnitTestResult>
+    <UnitTestResult executionId="9926ac23-78cc-4b43-a356-14891ebe7487" testId="4463b9d7-a5da-32b2-ddb6-c26959bc2437" testName="getAllTest" computerName="POOK-PC" duration="00:00:00.3751014" startTime="2012-04-08T01:21:12.7504307+08:00" endTime="2012-04-08T01:21:13.1324526+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="9926ac23-78cc-4b43-a356-14891ebe7487">
+      <Output>
+        <StdOut>Actual is Event with Full Guest List
+Expected is Event with Full Guest List
+Actual is Hello World
+Expected is Hello World
+Actual is Another new event!
+Expected is Another new event!</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="2f46ccb7-3b46-46d5-900b-75a5187a6584" testId="4a380e22-bfc9-61b5-69bf-56a2e93870e7" testName="getByBudgetIdTest" computerName="POOK-PC" duration="00:00:00.0606333" startTime="2012-04-08T01:21:13.1374529+08:00" endTime="2012-04-08T01:21:13.2094570+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="2f46ccb7-3b46-46d5-900b-75a5187a6584">
+      <Output>
+        <ErrorInfo>
+          <Message>Assert.AreEqual failed. Expected:&lt;2&gt;. Actual:&lt;1&gt;. </Message>
+          <StackTrace>   at Test.BudgetItemModelTest.getByBudgetIdTest() in C:\Users\pook\Desktop\new\EventManagerModel\Test\BudgetItemModelTest.cs:line 138
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="eae959d2-fbae-4245-bc23-f8f6a149c6bb" testId="544b302b-9519-c3d8-160f-d5ffbc660e98" testName="createTest" computerName="POOK-PC" duration="00:00:00.1492807" startTime="2012-04-08T01:21:13.2114571+08:00" endTime="2012-04-08T01:21:13.3714662+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="eae959d2-fbae-4245-bc23-f8f6a149c6bb">
+    </UnitTestResult>
+    <UnitTestResult executionId="7d06223d-949d-4331-9b32-e71e07da4d74" testId="59beadb5-7732-6ff1-c491-0bfa1b1b4b70" testName="getByMatricIdTest" computerName="POOK-PC" duration="00:00:00.2778736" startTime="2012-04-08T01:21:13.3764665+08:00" endTime="2012-04-08T01:21:13.6604828+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="7d06223d-949d-4331-9b32-e71e07da4d74">
+    </UnitTestResult>
+    <UnitTestResult executionId="1c57ec66-fe2d-4f62-ac79-de2b83a8f0cf" testId="66426c1a-8b37-840c-5d54-0a9cdbb1101f" testName="createUpdateDeleteObjTest" computerName="POOK-PC" duration="00:00:00.7054410" startTime="2012-04-08T01:21:13.6654831+08:00" endTime="2012-04-08T01:21:14.3775238+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="1c57ec66-fe2d-4f62-ac79-de2b83a8f0cf">
+    </UnitTestResult>
+    <UnitTestResult executionId="d92f925e-5261-46c4-861d-6318031931c1" testId="6d10f77b-d7c3-bfde-6ecc-2a56e62b019e" testName="StudentModelConstructorTest" computerName="POOK-PC" duration="00:00:00.0015958" startTime="2012-04-08T01:21:14.3805240+08:00" endTime="2012-04-08T01:21:14.3875244+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Inconclusive" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="d92f925e-5261-46c4-861d-6318031931c1">
+      <Output>
+        <ErrorInfo>
+          <Message>Assert.Inconclusive failed. TODO: Implement code to verify target</Message>
+          <StackTrace>   at Test.StudentModelTest.StudentModelConstructorTest() in C:\Users\pook\Desktop\new\EventManagerModel\Test\StudentModelTest.cs:line 76
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="85c478db-51ba-4d56-b7bf-0f614141ef5a" testId="7196bebb-03fc-f3ae-c4be-304633156165" testName="authenticateTest3" computerName="POOK-PC" duration="00:00:00.2816455" startTime="2012-04-08T01:21:14.3985250+08:00" endTime="2012-04-08T01:21:14.6845413+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="85c478db-51ba-4d56-b7bf-0f614141ef5a">
+    </UnitTestResult>
+    <UnitTestResult executionId="7bfbd292-aa47-4d36-b220-1d8d24d82ca5" testId="71b4660b-79b5-f37e-6678-ae8a9bf08dae" testName="getByIDTest" computerName="POOK-PC" duration="00:00:00.0501862" startTime="2012-04-08T01:21:14.6885416+08:00" endTime="2012-04-08T01:21:14.7465449+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="7bfbd292-aa47-4d36-b220-1d8d24d82ca5">
+    </UnitTestResult>
+    <UnitTestResult executionId="910fe10f-dbab-4f4b-8238-c17e8cb55254" testId="78230781-8f5b-c333-10ba-7350e341a428" testName="getNotByOwnerTest" computerName="POOK-PC" duration="00:00:00.3781885" startTime="2012-04-08T01:21:14.7535453+08:00" endTime="2012-04-08T01:21:15.1375673+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="910fe10f-dbab-4f4b-8238-c17e8cb55254">
+      <Output>
+        <StdOut>Actual is Event with Full Guest List
+Expected is Event with Full Guest List
+Actual is Hello World
+Expected is Hello World
+Actual is Another new event!
+Expected is Another new event!</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="4748af75-b91e-488a-9339-4b8a7f944415" testId="88fa9be9-85c2-33d2-20a5-8e410d0fedd2" testName="updateTest" computerName="POOK-PC" duration="00:00:00.5098896" startTime="2012-04-08T01:21:15.1395674+08:00" endTime="2012-04-08T01:21:15.6595971+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="4748af75-b91e-488a-9339-4b8a7f944415">
+      <Output>
+        <StdOut>43</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="631f4031-3dfb-48d9-a06a-9037ffd6be43" testId="9b99d127-6b63-0a5f-5670-f20195d5b70d" testName="getAllTest" computerName="POOK-PC" duration="00:00:00.2548802" startTime="2012-04-08T01:21:15.6635973+08:00" endTime="2012-04-08T01:21:15.9316127+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="631f4031-3dfb-48d9-a06a-9037ffd6be43">
+      <Output>
+        <ErrorInfo>
+          <Message>Test method Test.BudgetModelTest.getAllTest threw exception: 
+System.ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection.
+Parameter name: index</Message>
+          <StackTrace>    at System.ThrowHelper.ThrowArgumentOutOfRangeException()
+   at System.Collections.Generic.List`1.get_Item(Int32 index)
+   at Test.BudgetModelTest.getAllTest() in C:\Users\pook\Desktop\new\EventManagerModel\Test\BudgetModelTest.cs:line 119
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="3b0bf750-840e-4282-82f4-abeace4f43bc" testId="9f901cae-af44-10c5-5311-a7d82ee49a4b" testName="getByIDTest" computerName="POOK-PC" duration="00:00:00.7869152" startTime="2012-04-08T01:21:15.9416132+08:00" endTime="2012-04-08T01:21:16.7356587+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="3b0bf750-840e-4282-82f4-abeace4f43bc">
+      <Output>
+        <StdOut>37</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="56f2e444-32b2-4c92-a861-35c4bfbd7bf6" testId="a083f8d7-649b-ba15-b362-bf8c2f2930a3" testName="getAllTest" computerName="POOK-PC" duration="00:00:00.0502268" startTime="2012-04-08T01:21:16.7446592+08:00" endTime="2012-04-08T01:21:16.8016624+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="56f2e444-32b2-4c92-a861-35c4bfbd7bf6">
+      <Output>
+        <ErrorInfo>
+          <Message>Assert.AreEqual failed. Expected:&lt;3&gt;. Actual:&lt;2&gt;. </Message>
+          <StackTrace>   at Test.BudgetItemModelTest.getAllTest() in C:\Users\pook\Desktop\new\EventManagerModel\Test\BudgetItemModelTest.cs:line 177
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="030020df-c4b5-404b-b8c4-cf046426c3d0" testId="a64cba6d-c31e-5cb9-df08-a366e9e6b379" testName="getByIDTest2" computerName="POOK-PC" duration="00:00:00.0667953" startTime="2012-04-08T01:21:16.8056627+08:00" endTime="2012-04-08T01:21:16.8856672+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="030020df-c4b5-404b-b8c4-cf046426c3d0">
+    </UnitTestResult>
+    <UnitTestResult executionId="39152fcb-5956-460e-8377-c626969c68e7" testId="b9fd5027-d458-f3dc-2b95-b5c0257857b9" testName="createTest" computerName="POOK-PC" duration="00:00:00.1838345" startTime="2012-04-08T01:21:16.8886674+08:00" endTime="2012-04-08T01:21:17.0806784+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="39152fcb-5956-460e-8377-c626969c68e7">
+      <Output>
+        <ErrorInfo>
+          <Message>Test method Test.SubEventModelTest.createTest threw exception: 
+System.Data.Entity.Infrastructure.DbUpdateException: An error occurred while updating the entries. See the inner exception for details. ---&gt; System.Data.UpdateException: An error occurred while updating the entries. See the inner exception for details. ---&gt; System.Data.SqlServerCe.SqlCeException: A foreign key value cannot be inserted because a corresponding primary key value does not exist. [ Foreign key constraint name = FK_EventSubEvent ]</Message>
+          <StackTrace>    at System.Data.SqlServerCe.SqlCeCommand.ProcessResults(Int32 hr)
+   at System.Data.SqlServerCe.SqlCeCommand.ExecuteCommandText(IntPtr&amp; pCursor, Boolean&amp; isBaseTableCursor)
+   at System.Data.SqlServerCe.SqlCeCommand.ExecuteCommand(CommandBehavior behavior, String method, ResultSetOptions options)
+   at System.Data.SqlServerCe.SqlCeCommand.ExecuteNonQuery()
+   at System.Data.SqlServerCe.SqlCeMultiCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.SqlServerCe.SqlCeMultiCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.Mapping.Update.Internal.DynamicUpdateCommand.Execute(UpdateTranslator translator, EntityConnection connection, Dictionary`2 identifierValues, List`1 generatedValues)
+   at System.Data.Mapping.Update.Internal.UpdateTranslator.Update(IEntityStateManager stateManager, IEntityAdapter adapter)
+ --- End of inner exception stack trace ---
+    at System.Data.Mapping.Update.Internal.UpdateTranslator.Update(IEntityStateManager stateManager, IEntityAdapter adapter)
+   at System.Data.EntityClient.EntityAdapter.Update(IEntityStateManager entityCache)
+   at System.Data.Objects.ObjectContext.SaveChanges(SaveOptions options)
+   at System.Data.Entity.Internal.InternalContext.SaveChanges()
+ --- End of inner exception stack trace ---
+    at System.Data.Entity.Internal.InternalContext.SaveChanges()
+   at System.Data.Entity.Internal.LazyInternalContext.SaveChanges()
+   at System.Data.Entity.DbContext.SaveChanges()
+   at EventManagerPro.DBLayer.DomainModels.SubEventModel.create(Int32 eventId, Int32 venueId, DateTime start, DateTime end, String name) in C:\Users\pook\Desktop\new\EventManagerModel\EventManagerPro.DBLayer\DomainModels\SubEventModel.cs:line 25
+   at Test.SubEventModelTest.createTest() in C:\Users\pook\Desktop\new\EventManagerModel\Test\SubEventModelTest.cs:line 91
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="c1f02400-8e5a-45d1-a12b-6d6d5717f628" testId="c346c7bf-f8fc-5c8c-b831-5b9a2921bc58" testName="getAllByYearMonthTest" computerName="POOK-PC" duration="00:00:00.2852077" startTime="2012-04-08T01:21:17.0906790+08:00" endTime="2012-04-08T01:21:17.3806956+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="c1f02400-8e5a-45d1-a12b-6d6d5717f628">
+      <Output>
+        <StdOut>Actual is Event with Full Guest List
+Expected is Event with Full Guest List
+Actual is Hello World
+Expected is Hello World</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="89f586f2-187c-4bf8-a1bc-1154a47ba87f" testId="caeca598-ddb3-04dd-169b-b76b9a1897dc" testName="getByIDTest" computerName="POOK-PC" duration="00:00:00.0542264" startTime="2012-04-08T01:21:17.3916962+08:00" endTime="2012-04-08T01:21:17.4506996+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="89f586f2-187c-4bf8-a1bc-1154a47ba87f">
+    </UnitTestResult>
+    <UnitTestResult executionId="bc2a1448-c5c5-48bc-b4a8-e9592f76773b" testId="cde137cf-09b2-8471-3200-afd4bd50db7e" testName="registerGuestInvalidMatricTest" computerName="POOK-PC" duration="00:00:00.0746103" startTime="2012-04-08T01:21:17.4546998+08:00" endTime="2012-04-08T01:21:17.5337043+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="bc2a1448-c5c5-48bc-b4a8-e9592f76773b">
+    </UnitTestResult>
+    <UnitTestResult executionId="d880f1da-01ef-41a9-8817-5ef898312339" testId="d337ace4-c6fc-979c-4500-e57df9e5e21c" testName="createObjTest" computerName="POOK-PC" duration="00:00:00.4730262" startTime="2012-04-08T01:21:17.5377045+08:00" endTime="2012-04-08T01:21:18.0157319+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="d880f1da-01ef-41a9-8817-5ef898312339">
+      <Output>
+        <ErrorInfo>
+          <Message>Test method Test.EventModelTest.createObjTest threw exception: 
+System.Data.Entity.Infrastructure.DbUpdateException: An error occurred while saving entities that do not expose foreign key properties for their relationships. The EntityEntries property will return null because a single entity cannot be identified as the source of the exception. Handling of exceptions while saving can be made easier by exposing foreign key properties in your entity types. See the InnerException for details. ---&gt; System.Data.UpdateException: An error occurred while updating the entries. See the inner exception for details. ---&gt; System.Data.SqlServerCe.SqlCeException: A foreign key value cannot be inserted because a corresponding primary key value does not exist. [ Foreign key constraint name = FK_Organize ]</Message>
+          <StackTrace>    at System.Data.SqlServerCe.SqlCeCommand.ProcessResults(Int32 hr)
+   at System.Data.SqlServerCe.SqlCeCommand.ExecuteCommandText(IntPtr&amp; pCursor, Boolean&amp; isBaseTableCursor)
+   at System.Data.SqlServerCe.SqlCeCommand.ExecuteCommand(CommandBehavior behavior, String method, ResultSetOptions options)
+   at System.Data.SqlServerCe.SqlCeCommand.ExecuteNonQuery()
+   at System.Data.SqlServerCe.SqlCeMultiCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.SqlServerCe.SqlCeMultiCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.Mapping.Update.Internal.DynamicUpdateCommand.Execute(UpdateTranslator translator, EntityConnection connection, Dictionary`2 identifierValues, List`1 generatedValues)
+   at System.Data.Mapping.Update.Internal.UpdateTranslator.Update(IEntityStateManager stateManager, IEntityAdapter adapter)
+ --- End of inner exception stack trace ---
+    at System.Data.Mapping.Update.Internal.UpdateTranslator.Update(IEntityStateManager stateManager, IEntityAdapter adapter)
+   at System.Data.EntityClient.EntityAdapter.Update(IEntityStateManager entityCache)
+   at System.Data.Objects.ObjectContext.SaveChanges(SaveOptions options)
+   at System.Data.Entity.Internal.InternalContext.SaveChanges()
+ --- End of inner exception stack trace ---
+    at System.Data.Entity.Internal.InternalContext.SaveChanges()
+   at System.Data.Entity.Internal.LazyInternalContext.SaveChanges()
+   at System.Data.Entity.DbContext.SaveChanges()
+   at EventManagerPro.DBLayer.DomainModels.EventModel.createObj(Event e) in C:\Users\pook\Desktop\new\EventManagerModel\EventManagerPro.DBLayer\DomainModels\EventModel.cs:line 60
+   at Test.EventModelTest.createObjTest() in C:\Users\pook\Desktop\new\EventManagerModel\Test\EventModelTest.cs:line 315
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="cce6c241-f526-4bd5-a3c4-2e6ac26c838a" testId="d8f77fb4-4ca7-6fd2-2a8f-b5a816e06274" testName="updateObjTest" computerName="POOK-PC" duration="00:00:00.3687405" startTime="2012-04-08T01:21:18.0177320+08:00" endTime="2012-04-08T01:21:18.4037541+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="cce6c241-f526-4bd5-a3c4-2e6ac26c838a">
+      <Output>
+        <StdOut>43</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="9085aa48-ac96-4afa-9eed-b6c283ceec56" testId="db4d76b7-c07a-d9a1-32a8-9f7b4b504d29" testName="getAllByMonthTest" computerName="POOK-PC" duration="00:00:00.2713490" startTime="2012-04-08T01:21:18.4097544+08:00" endTime="2012-04-08T01:21:18.6957708+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="9085aa48-ac96-4afa-9eed-b6c283ceec56">
+      <Output>
+        <StdOut>Actual is Event with Full Guest List
+Expected is Event with Full Guest List
+Actual is Hello World
+Expected is Hello World</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="febad70c-ce9c-437e-b064-9e1c262d187c" testId="e4ad7175-931e-7af8-1c8f-e88329e6e874" testName="SubEventModelConstructorTest" computerName="POOK-PC" duration="00:00:00.0008582" startTime="2012-04-08T01:21:18.6977709+08:00" endTime="2012-04-08T01:21:18.7047713+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Inconclusive" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="febad70c-ce9c-437e-b064-9e1c262d187c">
+      <Output>
+        <ErrorInfo>
+          <Message>Assert.Inconclusive failed. TODO: Implement code to verify target</Message>
+          <StackTrace>   at Test.SubEventModelTest.SubEventModelConstructorTest() in C:\Users\pook\Desktop\new\EventManagerModel\Test\SubEventModelTest.cs:line 76
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="c473c8a5-c619-4eb1-8422-28cf327ec453" testId="e51e8bb9-ddf4-3099-586a-f78cbd5f9bde" testName="getByIDTest" computerName="POOK-PC" duration="00:00:00.1017851" startTime="2012-04-08T01:21:18.7067714+08:00" endTime="2012-04-08T01:21:18.8167777+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="c473c8a5-c619-4eb1-8422-28cf327ec453">
+      <Output>
+        <StdOut>2</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="38cb7095-b85e-4970-8f78-00aca3cf3a54" testId="e8083e2e-88c5-baf6-aad5-49f434afa078" testName="getByOwnerTest" computerName="POOK-PC" duration="00:00:00.3900379" startTime="2012-04-08T01:21:18.8197779+08:00" endTime="2012-04-08T01:21:19.2148005+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="38cb7095-b85e-4970-8f78-00aca3cf3a54">
+      <Output>
+        <StdOut>Actual is Event with Full Guest List
+Expected is Event with Full Guest List
+Actual is Hello World
+Expected is Hello World
+Actual is Another new event!
+Expected is Another new event!</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="3500db78-4da5-4cf6-8677-6829857fe7e6" testId="ece4eb43-de55-2efe-e488-6da09a25b324" testName="registerGuestInvalidEventTest" computerName="POOK-PC" duration="00:00:00.0736073" startTime="2012-04-08T01:21:19.2178006+08:00" endTime="2012-04-08T01:21:19.2968052+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="3500db78-4da5-4cf6-8677-6829857fe7e6">
+    </UnitTestResult>
+    <UnitTestResult executionId="2e88f149-c941-4317-9922-47050cff00b4" testId="ed685d3f-57d1-bb21-d658-61207580e0f9" testName="getByMatricIdTest2" computerName="POOK-PC" duration="00:00:00.2677765" startTime="2012-04-08T01:21:19.2998053+08:00" endTime="2012-04-08T01:21:19.5728209+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="2e88f149-c941-4317-9922-47050cff00b4">
+    </UnitTestResult>
+    <UnitTestResult executionId="0ebe4902-ef98-4cfc-821f-598a06685eda" testId="ffd96500-27b2-0a8e-f8ee-b1dc6076ec8d" testName="getAllForLoginPageTest" computerName="POOK-PC" duration="00:00:00.3618371" startTime="2012-04-08T01:21:19.5748211+08:00" endTime="2012-04-08T01:21:19.9428421+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="0ebe4902-ef98-4cfc-821f-598a06685eda">
+      <Output>
+        <StdOut>Actual is Event with Full Guest List
+Expected is Event with Full Guest List
+Actual is Hello World
+Expected is Hello World
+Actual is Another new event!
+Expected is Another new event!</StdOut>
+      </Output>
+    </UnitTestResult>
+  </Results>
+</TestRun>

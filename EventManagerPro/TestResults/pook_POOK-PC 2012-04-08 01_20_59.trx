@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="2f04198f-38ad-4e25-b6bc-387e99974c48" name="pook@POOK-PC 2012-04-08 01:20:59" runUser="pook-PC\pook" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Local" id="b5edaf27-13a8-4bb9-ae5f-dbba96af453a">
+    <Description>These are default test settings for a local test run.</Description>
+    <Deployment enabled="false" runDeploymentRoot="pook_POOK-PC 2012-04-08 01_20_59">
+      <DeploymentItem filename="C:\Users\pook\Desktop\new\EventManagerModel\EventManagerPro.DBLayer\bin\Debug\EventManagerPro.DBLayer.exe" />
+      <DeploymentItem filename="C:\Users\pook\Desktop\new\EventManagerModel\packages\EntityFramework.4.3.1\lib\net40\EntityFramework.dll" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2012-04-08T01:20:59.4566704+08:00" queuing="2012-04-08T01:20:59.4746714+08:00" start="2012-04-08T01:20:59.4956726+08:00" finish="2012-04-08T01:21:00.7357435+08:00" />
+  <ResultSummary outcome="Completed">
+    <Counters total="1" executed="1" passed="1" error="0" failed="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="getAllForLoginPageTest" storage="c:\users\pook\desktop\new\eventmanagermodel\test\bin\debug\test.dll" id="ffd96500-27b2-0a8e-f8ee-b1dc6076ec8d">
+      <Execution id="406a940a-c3bb-4e30-b7f7-1fa853155d6a" />
+      <TestMethod codeBase="C:/Users/pook/Desktop/new/EventManagerModel/Test/bin/Debug/Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Test.EventModelTest, Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="getAllForLoginPageTest" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="ffd96500-27b2-0a8e-f8ee-b1dc6076ec8d" executionId="406a940a-c3bb-4e30-b7f7-1fa853155d6a" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="406a940a-c3bb-4e30-b7f7-1fa853155d6a" testId="ffd96500-27b2-0a8e-f8ee-b1dc6076ec8d" testName="getAllForLoginPageTest" computerName="POOK-PC" duration="00:00:00.9301928" startTime="2012-04-08T01:20:59.5216741+08:00" endTime="2012-04-08T01:21:00.7127422+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="406a940a-c3bb-4e30-b7f7-1fa853155d6a">
+      <Output>
+        <StdOut>Actual is Event with Full Guest List
+Expected is Event with Full Guest List
+Actual is Hello World
+Expected is Hello World
+Actual is Another new event!
+Expected is Another new event!</StdOut>
+      </Output>
+    </UnitTestResult>
+  </Results>
+</TestRun>

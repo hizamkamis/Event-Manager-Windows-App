@@ -1,0 +1,142 @@
+﻿<Page
+	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+    xmlns:metro="http://schemas.codeplex.com/elysium/theme"
+    xmlns:converters="clr-namespace:EventManagerPro.Converters"
+    xmlns:controls="clr-namespace:EventManagerPro.Controls"
+    mc:Ignorable="d"
+	x:Class="EventManagerPro.Views.EventsView"
+	x:Name="Page"
+	Width="1024" Height="768" Background="{DynamicResource {x:Static SystemColors.WindowBrushKey}}">
+    <Page.Resources>
+        <BooleanToVisibilityConverter x:Key="boolToVisibilityConverter" />
+        <converters:DateSplitter x:Key="dateSplitter" />
+        <Storyboard x:Key="StatusMessageFadeIn">
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="statusMessage">
+        		<EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.8" Value="1">
+                    <EasingDoubleKeyFrame.EasingFunction>
+                        <CubicEase EasingMode="EaseOut" />
+                    </EasingDoubleKeyFrame.EasingFunction>
+                </EasingDoubleKeyFrame>
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
+        <Style x:Key="StatusMessageNoticeStyle" TargetType="Label">
+            <Setter Property="Background" Value="#FF52BE00" />
+            <Setter Property="BorderBrush" Value="#FF458712" />
+        </Style>
+        <Style x:Key="StatusMessageErrorStyle" TargetType="Label">
+            <Setter Property="Background" Value="#FFCC0000" />
+            <Setter Property="BorderBrush" Value="#FFFF0000" />
+        </Style>
+        <DataTemplate x:Key="OwnerBudgetCellTemplate">
+                <Viewbox Visibility="{Binding Path=IsBudgetOverflow, Converter={StaticResource boolToVisibilityConverter}, UpdateSourceTrigger=PropertyChanged}">
+                    <Path Data="M1.6003398,31.263L14.4714,31.263C15.4271,36.422005,18.256599,40.911781,22.229,44.016003L1.6003398,44.016003C0.716187,44.016003,0,43.302475,0,42.41964L0,39.833637 0,39.487125 0,38.375179 0,36.901123 0,35.791679 0,35.442764 0,32.861862C0,31.979029,0.716187,31.263,1.6003398,31.263z M1.6003762,15.629999L17.701,15.629999C15.428849,18.992105 14.104519,23.044332 14.104519,27.411671 14.104519,27.73978 14.13842,28.062691 14.15142,28.383001L1.6003762,28.383001C0.71620321,28.383001,0,27.668178,0,26.785351L0,24.203169 0,23.854158 0,22.747423 0,21.270878 0,20.161442 0,19.812431 0,17.22895C0,16.344923,0.71620321,15.629999,1.6003762,15.629999z M33.845074,13.239207L33.845074,16.603697C30.339844,17.228693 28.261784,19.554287 28.261784,22.533476 28.261784,25.728666 30.652237,27.42666 34.261669,28.746956 36.862019,29.684452 38.075493,30.65325 38.075493,32.249542 38.075493,33.882339 36.585724,34.954037 34.364567,34.954037 32.251205,34.954037 30.339844,34.262638 28.953171,33.429241L28.018188,36.72353C29.265663,37.522926,31.455822,38.147926,33.638081,38.218323L33.638081,41.582912 36.515526,41.582912 36.515526,38.008724C40.29665,37.384926 42.34491,34.814636 42.34491,31.869345 42.34491,28.746956 40.645645,26.874561 36.76162,25.416166 33.774677,24.27047 32.5247,23.439672 32.5247,22.015179 32.5247,20.835482 33.393284,19.588085 35.820236,19.588085 38.184692,19.588085 39.706764,20.387684 40.541348,20.804281L41.478828,17.608992C40.36705,17.054295,38.878677,16.500896,36.689819,16.429296L36.689819,13.239207z M35.17955,9.2600001C45.206657,9.2600001 53.333,17.387693 53.333,27.41106 53.333,37.434425 45.206657,45.562 35.17955,45.562 25.156443,45.562 17.028999,37.434425 17.028999,27.41106 17.028999,17.387693 25.156443,9.2600001 35.17955,9.2600001z M1.6003485,7.1054274E-15L36.448193,7.1054274E-15C37.330795,-8.313885E-08,38.046997,0.71620939,38.046997,1.59905L38.046997,4.1798209 38.046997,4.5287027 38.046997,5.6408071 38.046997,6.5496458C37.108093,6.424641 36.15649,6.3335685 35.179783,6.3335685 29.239752,6.3335685 23.884325,8.7997159 20.050905,12.752999L1.6003485,12.752999C0.71619076,12.752999,9.094947E-13,12.036878,0,11.15405L0,8.5705785 0,8.2242574 0,7.112163 0,5.6408071 0,4.5287027 0,4.1798209 0,1.59905C9.094947E-13,0.71620939,0.71619076,-8.313885E-08,1.6003485,7.1054274E-15z" Stretch="Uniform" Fill="#FF000000" Width="17" Height="17" Margin="0,0,0,0" />
+                    <Viewbox.ToolTip>
+                        <StackPanel>
+                            <TextBlock FontWeight="Bold">Budget Overflow!</TextBlock>
+                            <TextBlock>Oops! Looks like you have busted your budget! Remove some items or increase your budget by editing your event.</TextBlock>
+                        </StackPanel>
+                    </Viewbox.ToolTip>
+                </Viewbox>
+        </DataTemplate>
+        <DataTemplate x:Key="RegistrationIconCellTemplate">
+            <Viewbox Visibility="{Binding Path=IsRegistrationFull, Converter={StaticResource boolToVisibilityConverter}, UpdateSourceTrigger=PropertyChanged}">
+                <Path Data="M32.112014,26.833L32.198015,26.919994 32.112014,26.919994z M28.853005,19.451985L28.853005,30.178987 36.481456,30.178987C38.476313,30.178987 39.997202,29.687942 41.045128,28.70985 42.094051,27.729758 42.618013,26.428637 42.618013,24.802485 42.618013,23.332348 42.134048,22.07423 41.164118,21.024131 40.192188,19.975034 38.440315,19.451985 35.903498,19.451985z M22.399,14.102L37.05999,14.102C41.239,14.102 44.338972,15.15501 46.358988,17.262005 48.377968,19.369 49.386999,21.856001 49.386999,24.721999 49.386999,27.992004 48.291969,30.641999 46.106974,32.670014 43.92198,34.697024 41.150988,35.711001 37.793021,35.711001L28.853031,35.711001 28.853031,49.900001 22.399,49.900001z M31.999008,6.6669998C26.349014,6.6669998,21.135018,8.5179996,16.92202,11.642998L19.140019,13.860999 19.140019,24.420998 11.641025,16.922C8.5160275,21.134998 6.6670284,26.351997 6.6670284,31.999997 6.6670284,45.990994 18.00802,57.333991 31.999008,57.333991 37.649006,57.333991 42.865002,55.483993 47.076996,52.356994L33.689007,38.968995 37.792004,38.968995C39.795002,38.968995,41.646,38.659997,43.342999,38.063996L52.355995,47.077994C55.481989,42.864995 57.331987,37.647996 57.331987,31.999997 57.331987,18.009999 45.990997,6.6669998 31.999008,6.6669998z M31.999012,0C49.671978,0 63.998999,14.328003 63.998999,32.000001 63.998999,49.671996 49.671978,63.999999 31.999012,63.999999 14.327021,63.999999 0,49.671996 0,32.000001 0,14.328003 14.327021,0 31.999012,0z" Stretch="Uniform" Fill="#FF000000" Width="17" Height="17" Margin="0,0,0,0" />
+                <Viewbox.ToolTip>
+                    <StackPanel>
+                        <TextBlock FontWeight="Bold">Registration Full</TextBlock>
+                        <TextBlock>The guest list is full! If you are the owner for this event, you might want to increase your capacity if you want to continue taking in guests.</TextBlock>
+                    </StackPanel>
+                </Viewbox.ToolTip>
+            </Viewbox>
+        </DataTemplate>
+        <DataTemplate x:Key="OwnerActionCellTemplate">
+            <StackPanel Orientation="Horizontal">
+                <Button Content="EDIT" HorizontalAlignment="Left" Width="Auto" d:LayoutOverrides="Height" FontWeight="Normal" FontSize="12" Padding="8,5" Tag="{Binding Id}" Click="editButton_Click" />
+                <Button Content="DELETE" Background="Red" HorizontalAlignment="Left" Width="Auto" d:LayoutOverrides="Height" FontWeight="Normal" FontSize="12" Padding="8,5" Tag="{Binding Id}" Margin="5,0,0,0" Click="deleteButton_Click" />
+            </StackPanel>
+        </DataTemplate>
+        <DataTemplate x:Key="RegisterActionCellTemplate">
+            <StackPanel Orientation="Horizontal">
+                <Button Content="UNREGISTER" Background="LightBlue" HorizontalAlignment="Left" Width="Auto" d:LayoutOverrides="Height" FontWeight="Normal" FontSize="12" Padding="8,5" Tag="{Binding Id}" Visibility="{Binding Path=IsRegistered, Converter={StaticResource boolToVisibilityConverter}, UpdateSourceTrigger=PropertyChanged}" Click="unregisterButton_Click" />
+            </StackPanel>
+        </DataTemplate>
+        <DataTemplate x:Key="EventActionCellTemplate">
+            <StackPanel Orientation="Horizontal">
+                <Button Content="INFO" Background="Gray" HorizontalAlignment="Left" Width="Auto" d:LayoutOverrides="Height" FontWeight="Normal" FontSize="12" Padding="8,5" Tag="{Binding Id}" Click="infoButton_Click" />
+                <Button Content="REGISTRATION FULL" HorizontalAlignment="Left" Width="Auto" d:LayoutOverrides="Height" FontWeight="Normal" FontSize="12" Padding="8,5" Tag="{Binding Id}" Margin="5,0,0,0" Visibility="{Binding Path=IsGuestRegistrationFull, Converter={StaticResource boolToVisibilityConverter}, UpdateSourceTrigger=PropertyChanged}" IsEnabled="False" ToolTip="Registration is full. You cannot register for this event until more slots have been allocated." ToolTipService.ShowOnDisabled="True" />
+                <Button Content="REGISTER" Background="Green" HorizontalAlignment="Left" Width="Auto" d:LayoutOverrides="Height" FontWeight="Normal" FontSize="12" Padding="8,5" Tag="{Binding Id}" Margin="5,0,0,0" Visibility="{Binding Path=CanRegister, Converter={StaticResource boolToVisibilityConverter}, UpdateSourceTrigger=PropertyChanged}" Click="registerButton_Click" />
+                <Button Content="UNREGISTER" Background="#FFFF3300" HorizontalAlignment="Left" Width="Auto" d:LayoutOverrides="Height" FontWeight="Normal" FontSize="12" Padding="8,5" Tag="{Binding Id}" Margin="5,0,0,0" Visibility="{Binding Path=IsRegistered, Converter={StaticResource boolToVisibilityConverter}, UpdateSourceTrigger=PropertyChanged}" Click="unregisterButton_Click" />
+                <Button Content="EDIT" HorizontalAlignment="Left" Width="Auto" d:LayoutOverrides="Height" FontWeight="Normal" FontSize="12" Padding="8,5" Tag="{Binding Id}" Visibility="{Binding Path=IsOwner, Converter={StaticResource boolToVisibilityConverter}, UpdateSourceTrigger=PropertyChanged}" Margin="5,0,0,0" Click="editButton_Click" />
+                <Button Content="DELETE" Background="Red" HorizontalAlignment="Left" Width="Auto" d:LayoutOverrides="Height" FontWeight="Normal" FontSize="12" Padding="8,5" Tag="{Binding Id}" Margin="5,0,0,0" Visibility="{Binding Path=IsOwner, Converter={StaticResource boolToVisibilityConverter}, UpdateSourceTrigger=PropertyChanged}" Click="deleteButton_Click" />
+            </StackPanel>
+        </DataTemplate>
+    </Page.Resources>
+    <StackPanel>
+    	<StackPanel.Background>
+    		<LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+    			<GradientStop Color="#FFEEEEEE" Offset="0"/>
+    			<GradientStop Color="White" Offset="0.2"/>
+    		</LinearGradientBrush>
+    	</StackPanel.Background>
+        <StackPanel Orientation="Horizontal" Margin="0,15,30,0" d:LayoutOverrides="Width" HorizontalAlignment="Right">
+            <Label Content="Logged in as" Margin="0" FontSize="13.333" Foreground="#CC000000"/>
+            <Label x:Name="loggedInUserLabel" FontWeight="Bold" Content="Melvin" Padding="0,5" FontSize="13.333"/>
+            <Button Name="logoutButton" Content="LOGOUT" Padding="8,0" Margin="10,0,0,0" FontSize="12" Click="logoutButton_Click" Background="White" Foreground="#FF666666" BorderBrush="#FFCCCCCC" BorderThickness="1" />
+        </StackPanel>
+        <DockPanel Margin="30,20,30,0" d:LayoutOverrides="Width" >
+        	<TextBlock Text="Events Management" FontSize="42" FontWeight="Light" HorizontalAlignment="Left" d:LayoutOverrides="GridBox"/>
+            <Button Margin="20,10,0,0" Height="32" x:Name="createEventBtn" Click="createEventBtn_Click" HorizontalAlignment="Left" FontWeight="Light" Content="CREATE EVENT" IsDefault="True" FontSize="13.333" Padding="10,5" Background="#FF333333" Foreground="White" />
+        </DockPanel>
+        <Label x:Name="statusMessage" Margin="30,10,30,0" Padding="10,8" Foreground="White" FontSize="14.667" Content="This is a Status Message." BorderThickness="1" VerticalAlignment="Center" Style="{StaticResource StatusMessageNoticeStyle}" Opacity="0" />
+        <TabControl DockPanel.Dock="Right" Margin="30,10,30,0" Height="538">
+            <TabItem Header="Upcoming" IsSelected="True">
+                <StackPanel Height="500">
+                    <DataGrid x:Name="upcomingEventsListGrid" MaxHeight="450" Margin="0,20" AutoGenerateColumns="False" HeadersVisibility="Column" IsReadOnly="True" GridLinesVisibility="None" ItemsSource="{Binding Path=UpcomingEventsList, UpdateSourceTrigger=PropertyChanged}">
+                        <DataGrid.BorderBrush>
+                            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                                <GradientStop Color="Black" Offset="0"/>
+                                <GradientStop Color="White" Offset="1"/>
+                            </LinearGradientBrush>
+                        </DataGrid.BorderBrush>
+                        <DataGrid.Columns>
+                            <DataGridTemplateColumn Width="32" CellTemplate="{StaticResource RegistrationIconCellTemplate}" />
+                            <DataGridTextColumn Header="EVENT NAME" Width="*" Binding="{Binding Name}" />
+                            <DataGridTextColumn Header="DATE" Width="100" Binding="{Binding Path=Start,Converter={StaticResource dateSplitter},ConverterParameter=date}" />
+                            <DataGridTemplateColumn Header="ACTION(S)" Width="250" CellTemplate="{StaticResource EventActionCellTemplate}" />
+                        </DataGrid.Columns>
+                    </DataGrid>
+                    <metro:CircularProgressBar x:Name="upcomingEventsLoadingIcon" Width="32" State="Indeterminate" HorizontalAlignment="Center" Height="32" Visibility="Hidden" />
+                </StackPanel>
+            </TabItem>
+            <TabItem Header="My Events">
+                <StackPanel Margin="0" d:LayoutOverrides="Width" Height="500">
+                    <Label Content="CREATED EVENTS" HorizontalAlignment="Left" Margin="0,20,0,0" FontSize="16" FontWeight="Bold"/>
+                    <DataGrid x:Name="createdEventsListGrid" Margin="5,10" AutoGenerateColumns="False" HeadersVisibility="Column" IsReadOnly="True" MaxHeight="300" ScrollViewer.HorizontalScrollBarVisibility="Hidden" ItemsSource="{Binding Path=CreatedEventsList, UpdateSourceTrigger=PropertyChanged}">
+                        <DataGrid.Columns>
+                            <DataGridTemplateColumn Width="32" CellTemplate="{StaticResource OwnerBudgetCellTemplate}" />
+                            <DataGridTemplateColumn Width="32" CellTemplate="{StaticResource RegistrationIconCellTemplate}" />
+                            <DataGridTextColumn Header="EVENT NAME" Width="*" Binding="{Binding Name}" />
+                            <DataGridTextColumn Header="DATE" Width="100" Binding="{Binding Path=Start,Converter={StaticResource dateSplitter},ConverterParameter=date}" />
+                            <DataGridTemplateColumn Header="ACTION(S)" Width="200" CellTemplate="{StaticResource OwnerActionCellTemplate}" />
+                        </DataGrid.Columns>
+                    </DataGrid>
+                    <Separator Height="10" Margin="0"/>
+                    <Label Content="REGISTERED EVENTS" HorizontalAlignment="Left" Margin="0" FontSize="16" FontWeight="Bold"/>
+                    <DataGrid x:Name="registeredEventsListGrid" Margin="5,10" AutoGenerateColumns="False" HeadersVisibility="Column" IsReadOnly="True" MaxHeight="300" ScrollViewer.HorizontalScrollBarVisibility="Hidden" ItemsSource="{Binding Path=RegisteredEventsList, UpdateSourceTrigger=PropertyChanged}">
+                        <DataGrid.Columns>
+                            <DataGridTemplateColumn Width="32" CellTemplate="{StaticResource RegistrationIconCellTemplate}" />
+                            <DataGridTextColumn Header="EVENT NAME" Width="*" Binding="{Binding Name}" />
+                            <DataGridTextColumn Header="DATE" Width="100" Binding="{Binding Path=Start,Converter={StaticResource dateSplitter},ConverterParameter=date}" />
+                            <DataGridTemplateColumn Header="ACTION(S)" Width="200" CellTemplate="{StaticResource RegisterActionCellTemplate}" />
+                        </DataGrid.Columns>
+                    </DataGrid>
+                </StackPanel>
+            </TabItem>
+        </TabControl>
+        <controls:EventInfoDialog x:Name="eventInfoDialog" Width="1024" Height="768" Margin="0,-728,0,0" />
+    </StackPanel>
+</Page>

@@ -1,0 +1,72 @@
+﻿<UserControl x:Class="EventManagerPro.Controls.EventInfoDialog"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             d:DesignHeight="300" d:DesignWidth="300" Width="1024" Height="768" Background="#CC000000">
+    <UserControl.Resources>
+        <Storyboard x:Key="ContentFadeIn">
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.2" Value="1">
+                    <EasingDoubleKeyFrame.EasingFunction>
+                        <CubicEase EasingMode="EaseIn" />
+                    </EasingDoubleKeyFrame.EasingFunction>
+                </EasingDoubleKeyFrame>
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
+        <Storyboard x:Key="ContentFadeOut">
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)">
+                <EasingDoubleKeyFrame KeyTime="0" Value="1"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.3" Value="0">
+                    <EasingDoubleKeyFrame.EasingFunction>
+                        <CubicEase EasingMode="EaseOut" />
+                    </EasingDoubleKeyFrame.EasingFunction>
+                </EasingDoubleKeyFrame>
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
+        <BooleanToVisibilityConverter x:Key="boolToVisibilityConverter" />
+    </UserControl.Resources>
+    <StackPanel Background="White" Margin="150,100">
+        <Button x:Name="closeButton" Width="48" Height="48" Background="{x:Null}" Margin="0,-20,-20,0" HorizontalAlignment="Right" Click="closeButton_Click">
+            <Viewbox xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
+                <Grid Name="backgroundGrid" Width="48" Height="48" Visibility="Visible">
+                    <Ellipse Fill="#FFFFFFFF" Name="Border" Visibility="Visible" />
+                    <Ellipse Fill="#FF000000" Name="Fill" Visibility="Visible" Width="40" Height="40" />
+                    <Path Data="F1M54.0573,47.8776L38.1771,31.9974 54.0547,16.1198C55.7604,14.4141 55.7604,11.6511 54.0573,9.94531 52.3516,8.23962 49.5859,8.23962 47.8802,9.94531L32.0026,25.8229 16.1224,9.94531C14.4167,8.23962 11.6511,8.23962 9.94794,9.94531 8.24219,11.6511 8.24219,14.4141 9.94794,16.1198L25.8255,32 9.94794,47.8776C8.24219,49.5834 8.24219,52.3477 9.94794,54.0534 11.6511,55.7572 14.4167,55.7585 16.1224,54.0534L32.0026,38.1745 47.8802,54.0534C49.5859,55.7585 52.3516,55.7572 54.0573,54.0534 55.7604,52.3477 55.763,49.5834 54.0573,47.8776z" Stretch="Uniform" Fill="#FFFFFFFF" Width="24" Height="24" Margin="0,0,0,0" />
+                </Grid>
+            </Viewbox>
+        </Button>
+        <StackPanel Orientation="Horizontal" Margin="0,20,20,20">
+            <Rectangle Fill="#FF003399" Width="5" Margin="0,5,15,5" />
+            <StackPanel Width="500">
+                <Label x:Name="eventNameHeader" Content="{Binding Path=Name}" FontSize="42" Padding="0" FontWeight="Light" />
+                <StackPanel Orientation="Horizontal" Margin="0,3,0,0" >
+                    <Label x:Name="upcomingEventTimeLabel_Start" FontSize="18.667" Content="{Binding Path=Start}" ContentStringFormat="MMM d, hh':'mm tt" Padding="0" Foreground="#7F000000" Visibility="{Binding Path=HasSchedule, Converter={StaticResource boolToVisibilityConverter}}" />
+                    <Label Content=" to " FontSize="18.667" Foreground="#7F000000" Padding="0" Visibility="{Binding Path=HasSchedule, Converter={StaticResource boolToVisibilityConverter}}" />
+                    <Label x:Name="upcomingEventTimeLabel_End" FontSize="18.667" Content="{Binding Path=End}" ContentStringFormat="MMM d, hh':'mm tt" Padding="0" Foreground="#7F000000" Visibility="{Binding Path=HasSchedule, Converter={StaticResource boolToVisibilityConverter}}" />
+                </StackPanel>
+            </StackPanel>
+            <StackPanel Width="145" Height="75" Margin="20,10" x:Name="actionsPanel" Visibility="Collapsed">
+                <Button x:Name="eventEditButton" Content="EDIT" FontSize="16" FontWeight="Normal" Margin="0,0,0,5" Visibility="{Binding Path=IsOwner, Converter={StaticResource boolToVisibilityConverter}, UpdateSourceTrigger=PropertyChanged}" Click="eventEditButton_Click" Tag="{Binding Path=Id}" />
+                <Button x:Name="eventDeleteButton" Content="DELETE" FontSize="16" FontWeight="Normal" Margin="0,0,0,5" Background="Red" Visibility="{Binding Path=IsOwner, Converter={StaticResource boolToVisibilityConverter}, UpdateSourceTrigger=PropertyChanged}" Click="eventDeleteButton_Click" Tag="{Binding Path=Id}" />
+                <Button x:Name="eventRegisterButton" Content="REGISTER" FontSize="16" FontWeight="Normal" Margin="0,0,0,5" Background="Green" Visibility="{Binding Path=CanRegister, Converter={StaticResource boolToVisibilityConverter}, UpdateSourceTrigger=PropertyChanged}" Click="eventRegisterButton_Click" Tag="{Binding Path=Id}" />
+                <Button Content="REGISTRATION FULL" FontSize="12" FontWeight="Normal" Margin="0,0,0,5" Visibility="{Binding Path=IsRegistrationFull, Converter={StaticResource boolToVisibilityConverter}, UpdateSourceTrigger=PropertyChanged}" IsEnabled="False" ToolTip="Registration is full. You cannot register for this event until more slots have been allocated." ToolTipService.ShowOnDisabled="True" />
+                <Button x:Name="eventUnregisterButton" Content="UNREGISTER" FontSize="16" FontWeight="Normal" Margin="0" Background="#FFFF3300" Visibility="{Binding Path=IsRegistered, Converter={StaticResource boolToVisibilityConverter}, UpdateSourceTrigger=PropertyChanged}" Click="eventUnregisterButton_Click" Tag="{Binding Path=Id}" />
+            </StackPanel>
+        </StackPanel>
+        <TextBlock Width="685" Text="{Binding Path=Description}" FontSize="14.667" TextWrapping="Wrap" LineHeight="21.333" TextAlignment="Justify" HorizontalAlignment="Left" Margin="20,0,0,0" Foreground="#FF666666" Height="85" />
+        <Separator Height="30" Margin="10,10,10,0" />
+        <Label x:Name="subEventHeader" Content="Itinerary" FontSize="18.667" Padding="0" Margin="20,0,20,0" />
+        <DataGrid x:Name="subEventsListGrid" Margin="20,10" AutoGenerateColumns="False" HeadersVisibility="Column" IsReadOnly="True" GridLinesVisibility="None" Height="230" ItemsSource="{Binding Path=SubEventsList}" Background="White">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="PROGRAMME" Width="300" Binding="{Binding Path=Name}" />
+                <DataGridTextColumn Header="DATE" Binding="{Binding Path=Start, StringFormat='MMMM dd, yyyy'}" SortDirection="Ascending" />
+                <DataGridTextColumn Header="START TIME" Binding="{Binding Path=Start, StringFormat='hh:mm tt'}" />
+                <DataGridTextColumn Header="END TIME" Binding="{Binding Path=End, StringFormat='hh:mm tt'}" />
+                <DataGridTextColumn Header="VENUE" Binding="{Binding Path=Venue.Name}" />
+            </DataGrid.Columns>
+        </DataGrid>
+    </StackPanel>
+</UserControl>

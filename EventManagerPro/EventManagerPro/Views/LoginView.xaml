@@ -1,0 +1,87 @@
+﻿<Page
+	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+    xmlns:metro="http://schemas.codeplex.com/elysium/theme" 
+    xmlns:converters="clr-namespace:EventManagerPro.Converters"
+    xmlns:controls="clr-namespace:EventManagerPro.Controls"
+    xmlns:vm="clr-namespace:EventManagerPro.ViewModels"
+    mc:Ignorable="d"
+	x:Class="EventManagerPro.Views.LoginView"
+	x:Name="Page"
+	Width="1024" Height="768" xmlns:my="clr-namespace:EventManagerPro">
+    <Page.Resources>
+        <Storyboard x:Key="ContentFadeIn">
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.3" Value="1"/>
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
+        <converters:DateSplitter x:Key="dateSplitter" />
+        <BooleanToVisibilityConverter x:Key="boolToVisibilityConverter" />
+        <DataTemplate x:Key="UpcomingEventsItemsTemplate">
+            <StackPanel Height="Auto" Width="650">
+                <DockPanel Margin="0,0,0,0" d:LayoutOverrides="Width">
+                    <StackPanel Height="Auto" Width="40">
+                        <Label x:Name="upcomingEventDayLabel" Content="{Binding Path=Start,Converter={StaticResource dateSplitter},ConverterParameter=day, Mode=OneWay}" Height="Auto" FontSize="24" HorizontalAlignment="Center" Padding="0" Visibility="{Binding Path=HasSchedule, Converter={StaticResource boolToVisibilityConverter}}" />
+                        <Label x:Name="upcomingEventMonthLabel" Content="{Binding Path=Start,Converter={StaticResource dateSplitter},ConverterParameter=month, Mode=OneWay}" Height="Auto" FontSize="10.667" HorizontalAlignment="Center" Padding="0" Visibility="{Binding Path=HasSchedule, Converter={StaticResource boolToVisibilityConverter}}" />
+                    </StackPanel>
+                    <StackPanel Height="Auto" Margin="15,0,0,0">
+                        <Label x:Name="upcomingEventTitleLabel" Height="Auto" FontSize="21.333" Padding="0" Content="{Binding Path=Name}"/>
+						<StackPanel Orientation="Horizontal">
+                            <Label x:Name="upcomingEventTimeLabel_Start" FontSize="13.333" Padding="0" Content="{Binding Path=Start}" ContentStringFormat="MMM d, hh':'mm tt" Foreground="#7F000000" Visibility="{Binding Path=HasSchedule, Converter={StaticResource boolToVisibilityConverter}}" />
+                            <Label Content=" - " FontSize="13.333" Foreground="#7F000000" Padding="0" Visibility="{Binding Path=HasSchedule, Converter={StaticResource boolToVisibilityConverter}}" />
+                            <Label x:Name="upcomingEventTimeLabel_End" FontSize="13.333" Padding="0" Content="{Binding Path=End}" ContentStringFormat="MMM d, hh':'mm tt" Foreground="#7F000000" Visibility="{Binding Path=HasSchedule, Converter={StaticResource boolToVisibilityConverter}}" />
+						</StackPanel>
+                        <TextBlock Width="550" Text="{Binding Path=Description}" Margin="0,10" FontSize="13" TextWrapping="Wrap" LineHeight="1.5" TextAlignment="Justify" HorizontalAlignment="Left" />
+                        <Button Content="EVENT DETAILS" HorizontalAlignment="Left" Width="Auto" d:LayoutOverrides="Height" FontWeight="Normal" Tag="{Binding Id}" Click="InfoButton_Click" Margin="0,10,0,0" FontSize="13" Padding="8,5" />
+                    </StackPanel>
+                </DockPanel>
+                <Separator Height="50" Margin="0,0,0,0" Width="Auto" Background="#FFDDDDDD"/>
+            </StackPanel>
+        </DataTemplate>
+    </Page.Resources>
+	<StackPanel>
+	    <DockPanel Height="768">
+	        <StackPanel Width="320" HorizontalAlignment="Left" Background="#FFEFEFEF">
+	            <TextBlock TextWrapping="Wrap" Text="Welcome!" Margin="30,70,30,10" FontSize="26.667" FontWeight="Light" />
+	            <TextBlock Margin="30,0,30,0" TextWrapping="Wrap" FontSize="14.667" TextAlignment="Justify" Text="Event Manager Pro is an effective desktop application which helps students to plan and better organize events as well as view any upcoming events"/>
+	            <TextBlock Margin="30,30,30,0" TextWrapping="Wrap" FontSize="14.667" TextAlignment="Justify" Text="•  View all available events&#xa;•  View all upcoming events&#xa;•  Register all events"/>
+                <TextBlock TextWrapping="Wrap" Text="Login" Margin="30,50,30,10" FontSize="26.667" FontWeight="Light" />
+	            <Label Content="Username" FontSize="13.333" Margin="30,0" Padding="0,0,0,5" />
+                <TextBox x:Name="usernameText" Margin="30,0,30,0" TextWrapping="Wrap" Height="35" Text="{Binding Path=Login.Username, ValidatesOnDataErrors=True, ValidatesOnExceptions=True, Mode=TwoWay}" Style="{DynamicResource noValidationBorder}" />
+	            <Label Content="Password" FontSize="13.333" Margin="30,10,30,0" Padding="0,0,0,5"/>
+                <PasswordBox Margin="30,0" Height="35" Name="passwordText" Password="" />
+	            <DockPanel Height="35" Margin="30,20,30,0">
+                    <Button x:Name="loginButton" Content="LOGIN" HorizontalAlignment="Right" FontSize="13.333" Width="100" Padding="5,7" Click="LoginButton_Click" d:LayoutOverrides="Height" DockPanel.Dock="Right" IsDefault="True" IsEnabled="{Binding Path=Login.HasNoErrors, UpdateSourceTrigger=PropertyChanged, Mode=OneWay}" />
+	                <metro:CircularProgressBar x:Name="loginLoadingIcon" Width="20" State="Indeterminate" DockPanel.Dock="Right" Margin="100,0,0,0" Visibility="Hidden" />
+	            </DockPanel>
+	        </StackPanel>
+	        <StackPanel Width="704" HorizontalAlignment="Left" DockPanel.Dock="Right">
+	        	<StackPanel.Background>
+	        		<LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+	        			<GradientStop Color="#FFEEEEEE" Offset="0"/>
+	        			<GradientStop Color="White" Offset="0.1"/>
+	        		</LinearGradientBrush>
+	        	</StackPanel.Background>
+	            <DockPanel Margin="30,60,30,0">
+	                <TextBlock TextWrapping="Wrap" Text="Upcoming Events" FontSize="42" FontWeight="Light" />
+                    <ComboBox x:Name="upcomingEventsFilter" HorizontalAlignment="Right" FontSize="14.667" ToolTip="View by Month" Width="175" SelectedIndex="0" SelectionChanged="UpcomingEventsFilter_SelectionChanged" Margin="0,10" ItemsSource="{Binding Path=MonthFilterOptions, Mode=OneWay}" DisplayMemberPath="Key" SelectedValuePath="Key">
+	                </ComboBox>
+	            </DockPanel>
+	            <ScrollViewer x:Name="upcomingEventsScrollViewer" ScrollViewer.VerticalScrollBarVisibility="Auto" Margin="30,30,30,0" Height="470" BorderBrush="#FFCCCCCC" >
+	                <ItemsControl x:Name="upcomingEventsListBox" ItemTemplate="{DynamicResource UpcomingEventsItemsTemplate}" ItemsSource="{Binding Path=UpcomingEvents, UpdateSourceTrigger=PropertyChanged}" />
+	            </ScrollViewer>
+	            <Label Margin="30,30,30,0" Height="470" x:Name="noUpcomingEventsNotice" Content="There are no upcoming events happening this month." FontSize="22" HorizontalAlignment="Center" Foreground="#66000000" VerticalContentAlignment="Center" Visibility="Collapsed" />
+	            <metro:CircularProgressBar x:Name="upcomingEventsLoadingIcon" Width="30" Height="30" Margin="297,-500,333,0" State="Indeterminate" Visibility="Hidden" />
+	            <Separator Margin="30,0" Background="#99000000"/>
+	            <DockPanel LastChildFill="False" Margin="100,20,100,10">
+	                <Button x:Name="prevButton" Content="PREVIOUS" Width="150" Padding="8,9" FontSize="13.333" Click="PrevButton_Click" />
+	                <Button x:Name="nextButton" Content="NEXT" Width="150" Padding="8,9" DockPanel.Dock="Right" FontSize="13.333" Click="NextButton_Click" />
+	            </DockPanel>
+	        </StackPanel>
+	    </DockPanel>
+		<controls:EventInfoDialog x:Name="eventInfoDialog" Width="1024" Height="768" Margin="0,-768,0,0" />
+	</StackPanel>
+</Page>
